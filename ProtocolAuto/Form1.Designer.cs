@@ -172,7 +172,7 @@
             this.creat.TabIndex = 34;
             this.creat.Text = "Создать";
             this.creat.UseVisualStyleBackColor = true;
-            this.creat.Click += new System.EventHandler(this.creat_Click);
+            this.creat.Click += new System.EventHandler(this.create_Click);
             // 
             // auditBox
             // 

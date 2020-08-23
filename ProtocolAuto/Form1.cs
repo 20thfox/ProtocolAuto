@@ -68,7 +68,7 @@ namespace ProtocolAuto
             InitializeComponent();
         }
 
-        private void creat_Click(object sender, EventArgs e)//нажатие кнопки Создать
+        private void create_Click(object sender, EventArgs e)//нажатие кнопки Создать
         {
             if(emptyTest()==false)//проверка на заполненость полей
             {
