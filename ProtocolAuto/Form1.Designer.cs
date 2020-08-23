@@ -30,6 +30,7 @@
         {
             this.tabControlPanel = new System.Windows.Forms.TabControl();
             this.mainTab = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
             this.protNumBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.fioBox4 = new System.Windows.Forms.TextBox();
@@ -68,7 +69,7 @@
             this.objct = new System.Windows.Forms.Label();
             this.costumerBox = new System.Windows.Forms.TextBox();
             this.customer = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tabControlPanel.SuspendLayout();
             this.mainTab.SuspendLayout();
             this.SuspendLayout();
@@ -130,6 +131,15 @@
             this.mainTab.TabIndex = 0;
             this.mainTab.Text = "Основные данные";
             this.mainTab.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(56, 206);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 13);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Номер протокола:";
             // 
             // protNumBox
             // 
@@ -459,15 +469,6 @@
             this.customer.TabIndex = 0;
             this.customer.Text = "Заказчик:";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(56, 206);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 13);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Номер протокола:";
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -526,6 +527,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox protNumBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 

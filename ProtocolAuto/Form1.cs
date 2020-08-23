@@ -59,7 +59,7 @@ using Word = Microsoft.Office.Interop.Word;
 
 namespace ProtocolAuto
 {
-    public partial class mainForm : Form //Тест синхронизации
+    public partial class mainForm : Form //Тест синхронизации (Т_Т) принял тест синхронизации
     {
         private Word.Application wordapp; //глобальное определение Word.Application
         private Word.Document worddocument;
