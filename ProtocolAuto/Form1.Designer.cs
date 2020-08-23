@@ -1,6 +1,6 @@
 ﻿namespace ProtocolAuto
 {
-    partial class mainForm
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -172,7 +172,7 @@
             this.creat.TabIndex = 34;
             this.creat.Text = "Создать";
             this.creat.UseVisualStyleBackColor = true;
-            this.creat.Click += new System.EventHandler(this.create_Click);
+            this.creat.Click += new System.EventHandler(this.Create_Click);
             // 
             // auditBox
             // 

@@ -59,25 +59,25 @@ using Word = Microsoft.Office.Interop.Word;
 
 namespace ProtocolAuto
 {
-    public partial class mainForm : Form //Тест синхронизации (Т_Т) принял тест синхронизации
+    public partial class MainForm : Form //Тест синхронизации (Т_Т) принял тест синхронизации
     {
         private Word.Application wordapp; //глобальное определение Word.Application
         private Word.Document worddocument;
-        public mainForm()
+        public MainForm()
         {
             InitializeComponent();
         }
 
-        private void create_Click(object sender, EventArgs e)//нажатие кнопки Создать
+        private void Create_Click(object sender, EventArgs e)//нажатие кнопки Создать
         {
-            if(emptyTest()==false)//проверка на заполненость полей
+            if(EmptyTest()==false)//проверка на заполненость полей
             {
                 wordapp = new Word.Application();
                 wordapp.Visible = true;
-                genTemplate();
+                GenTemplate();
             }
         }
-        private void genTemplate()
+        private void GenTemplate()
         {
             try
             {
@@ -88,7 +88,7 @@ namespace ProtocolAuto
 
 
                 worddocument = wordapp.Documents.Add(ref template, ref newTemplate, ref documentType, ref visible);
-                genFormat();
+                GenFormat();
 
 
                // Save();
@@ -104,7 +104,7 @@ namespace ProtocolAuto
                 */
             }
         }
-        private void genFormat()
+        private void GenFormat()
         {
             //Объявление всякой хрени
             Object findText;
@@ -168,7 +168,7 @@ namespace ProtocolAuto
             lastTable.Cell(5, 2).Range.InsertAfter(dateRegBox.Text);
             lastTable.Cell(6, 2).Range.InsertAfter(dateTestBox.Text);
         }
-        private bool emptyTest()
+        private bool EmptyTest()
         {
             var listTextBox = new List<TextBox> 
                 {costumerBox, //список текстбоксов
