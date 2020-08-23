@@ -86,6 +86,7 @@ namespace ProtocolAuto
                 Object documentType = Word.WdNewDocumentType.wdNewBlankDocument;
                 Object visible = true;
 
+
                 worddocument = wordapp.Documents.Add(ref template, ref newTemplate, ref documentType, ref visible);
                 genFormat();
 
